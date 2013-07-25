@@ -1,0 +1,8 @@
+{
+  "name": "fridge",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular-fire": "latest",
+    "angular-bootstrap": "~0.4.0"
+  }
+}
