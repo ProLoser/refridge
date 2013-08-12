@@ -1,4 +1,4 @@
-angular.module('fridge', ['ui.bootstrap', 'firebase']).run(function($rootScope, angularFire, angularFireAuth){
+angular.module('refridge', ['ui.bootstrap', 'firebase', 'ui.keypress', 'ui.jq']).run(function($rootScope, angularFire, angularFireAuth){
 	var url = 'https://refridge.firebaseio.com/';
 	angularFire(url, $rootScope, 'refridge', {});
 	angularFireAuth.initialize(url, { scope: $rootScope, name: 'user'});
@@ -11,10 +11,17 @@ angular.module('fridge', ['ui.bootstrap', 'firebase']).run(function($rootScope, 
 	$rootScope.init = function(){
 		$rootScope.refridge.lists = [];
 	};
+	$rootScope.purchase = function(item){
+		item.purchased = Date();
+	};
+	$rootScope.unpurchase = function(item){
+		item.purchased = false;
+	};
 	$rootScope.create = function(){
 		$rootScope.activeList = {
 			name: 'New List',
-			items: []
+			items: [],
+			created: Date()
 		};
 		$rootScope.refridge.lists.push($rootScope.activeList);
 	};

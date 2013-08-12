@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "dependencies": {
     "angular-fire": "latest",
-    "angular-bootstrap": "~0.4.0"
+    "angular-bootstrap": "~0.4.0",
+    "angular-ui-utils": "~0.0.4",
+    "jquery": "~2.0.3"
   }
 }

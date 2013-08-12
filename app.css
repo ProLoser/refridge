@@ -1,0 +1,13 @@
+body {
+	padding-top: 60px;
+}
+.purchased {
+	text-decoration: line-through;
+}
+.purchased input, .purchased select {
+	text-decoration: line-through;
+}
+input {
+	background: #eee;
+	border: none;
+}
