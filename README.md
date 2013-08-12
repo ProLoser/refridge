@@ -3,6 +3,10 @@ refridge
 
 Refridge is a simple Shopping List webapp with one huge feature: **it knows when your food is going to expire!**
 
+**Original Idea**
+
+[Click here to checkout the blog post](http://deansofer.com/posts/view/18/Shopping-List-Expiration-Reminder-App)
+
 **How?**
 
 When you add food to your shopping list, you will be able to specify the category and type of food (along with normal shopping-list notes). When you check off items in shopping mode, they are considered 'purchased' at that date (approximately). A database will be developed that contains expiration times if the food is frozen, refrigerated, left out, or cooked.
